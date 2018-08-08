@@ -1,5 +1,5 @@
-yum groupinstall "Development Tools"
-yum install httpd24 httpd24-devel git openssl-devel readline-devel libcurl-devel
+yum -y groupinstall "Development Tools"
+yum -y install httpd24 httpd24-devel git openssl-devel readline-devel libcurl-devel
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:${PATH}"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
